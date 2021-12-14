@@ -1,8 +1,5 @@
-# Hangman-game
-HANGMAN INSTRUCTIONS Guess the letters in the secret word to solve the puzzle. You can guess a letter by typing it on your keyboard. If you solve the word, you win! Be careful! You can only make 6 mistakes...
-HANGMAN INSTRUCTIONS
-Guess the letters in the secret word to solve the puzzle. You can guess a letter by typing it on your keyboard. If you solve the word, you win!
-Be careful! You can only make 6 mistakes
+# HANGMAN INSTRUCTIONS
+Guess the letters in the secret word to solve the puzzle. You can guess a letter by typing it on your keyboard. If you solve the word, you win! Be careful! You can only make 6 mistakes...
 
 # HANGMAN TIPS & STRATEGIES
 Use your vowels. Looking at vowels is a good way to start. Since there are only 5, you can fill in some blanks pretty quickly. They can even help you guess the answer straight away. For example, if you try the letter A and the word looks like this ‘_A_A_A’, you might be able to guess straight away that the answer is BANANA just from one letter.
