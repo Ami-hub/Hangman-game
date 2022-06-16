@@ -27,7 +27,7 @@ def main():
         # if the attempt to add failed try again
         while not is_letter_valid: 
             current_letter, is_letter_valid = guess_letter(old_letters_guessed)
-        # if the letter is valid but not in the secret word
+        # if the guess is valid but not in the secret word
         if current_letter not in secret_word:
             num_of_tries += 1 
             print(f"the letter '{current_letter}' is not in the word")
@@ -42,7 +42,7 @@ def main():
 
 def is_one_number(string):
     """
-     this function checks the string contains only one number
+     Checks the string contains only one number
     :param string:a string 
     :type string: str
     :return: does the string contain only one number
@@ -55,18 +55,19 @@ def is_one_number(string):
 
 def play_again():
     """
-     this function checks if the player wants to play again
+     Checks if the player wants to play again
     :rtype: None
     """
     play = input("Play again? (y/n) ")
     if play.lower() == 'y':
         main()
-    print("GoodBye! :-)")
+    else:
+        print("GoodBye! :-)")
 
 
 def guess_letter(old_letters_guessed):
     """
-     this function receives input from the player and returns it and if it is valid
+     Receives input from the player and returns it and if it is valid
     :param old_letters_guessed: the list contains the letters the player has guessed so far
     :type old_letters_guessed: list
     :return: a tuple that contains the input from the player and if it is valid
@@ -80,7 +81,7 @@ def guess_letter(old_letters_guessed):
 
 def print_end_screen(winner, secret_word):
     """
-     this function prints a win or loss message accordingly
+     Prints a win or loss message accordingly
     :param winner: a variable that represents whether you won or lost the game
     :param secret_word: 
     :type winner: bool
@@ -96,7 +97,7 @@ def print_end_screen(winner, secret_word):
 
 def print_opening_screen(secret_word, old_letters_guessed):
     """
-     this function prints the opening screen of the game
+     Prints the opening screen of the game
     :param secret_word: the word the player has to guess
     :param old_letters_guessed: the list contains the letters the player has guessed so far
     :type secret_word: str
@@ -113,7 +114,7 @@ def print_opening_screen(secret_word, old_letters_guessed):
 
 def is_valid_input(letter_guessed):
     """
-     this function checks if the string is valid (one character in English)
+     Checks if the string is valid (one character in English)
     :param letter_guessed: string of characters
     :type letter_guessed: str
     :return: is the letter guessed valid or not
@@ -127,7 +128,7 @@ def is_valid_input(letter_guessed):
 
 def check_valid_input(letter_guessed, old_letters_guessed):
     """
-     this function checks the correctness of the string and whether the user has guessed the character before
+     Checks the correctness of the string and whether the user has guessed the character before
     :param letter_guessed: the string represents the character received from the player
     :param old_letters_guessed: the list contains the letters the player has guessed so far
     :type letter_guessed: str
@@ -144,7 +145,7 @@ def check_valid_input(letter_guessed, old_letters_guessed):
 
 def try_update_letter_guessed(letter_guessed, old_letters_guessed): 
     """
-     this function checks whether or not the new character can be added to the guess list
+     Checks whether or not the new character can be added to the guess list
     :param letter_guessed: the new character the user guessed
     :param old_letters_guessed: the list contains the letters the player has guessed so far
     :type letter_guessed: str
@@ -164,7 +165,7 @@ def try_update_letter_guessed(letter_guessed, old_letters_guessed):
 
 def it_is_invalid(old_letters_guessed):
     """
-     this function prints the list items sorted in ascending order and separated by "->"
+     Prints the list items sorted in ascending order and separated by "->"
     :param old_letters_guessed: the list contains the letters the player has guessed so far
     :type old_letters_guessed: list
     :rtype: None
@@ -179,7 +180,7 @@ def it_is_invalid(old_letters_guessed):
 
 def show_hidden_word(secret_word, old_letters_guessed):
     """
-     this function shows the player his progress in the game
+     Shows the player his progress in the game
     :param secret_word: the word the player has to guess
     :param old_letters_guessed: all the characters the player has already guessed
     :type secret_word: str
@@ -201,7 +202,7 @@ def show_hidden_word(secret_word, old_letters_guessed):
 
 def check_win(secret_word, old_letters_guessed): 
     """
-     this function checks whether the player was able to guess the secret word and thus won the game
+     Checks whether the player was able to guess the secret word and thus won the game
     :param secret_word: the word the player has to guess
     :param old_letters_guessed: all the characters the player has already guessed
     :type secret_word: str
@@ -219,7 +220,7 @@ def check_win(secret_word, old_letters_guessed):
 
 def show_hangman(num_of_tries):
     """
-     this function returns the snapshot of the game according to the num_of_tries value
+     Returns the snapshot of the game according to the num_of_tries value
     :param num_of_tries: the number of guesses the player has already guessed
     :type num_of_tries: int
     :return: the snapshot of the game
@@ -230,7 +231,7 @@ def show_hangman(num_of_tries):
 
 def choose_word():
     """
-     this function choose the secret word from the words file
+     Choose the secret word from the words file
     :return: the secret word 
     :rtype: str
     """
