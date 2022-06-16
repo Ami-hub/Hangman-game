@@ -1,4 +1,4 @@
-# Hangman game by Amitay Cahalon
+# simple hangman game by Amitay Cahalon
 import os
 from random import choice
 from colorama import Fore
