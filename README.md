@@ -13,10 +13,10 @@ Hangman teaches you spelling, vocabulary, and other related language skills. Han
 
 
 ## INSTALLING DEPENDENCIES
- `pip install -r requirements.txt`
+    `pip install -r requirements.txt`
 
 ## HOW TO START
- `python game.py`
+    `python game.py`
 
 
 ## Exapmles
